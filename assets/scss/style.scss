@@ -6,7 +6,7 @@
 @use "../scss/components/mixins";
 
 /* IMPORT THE SECTIONS */
-@use "../sections/header";
+@use "../scss/sections/header";
 @use "../scss/sections/side-sm-icon";
 @use "../scss/sections/all-deals";
 @use "../scss/sections/slider-hero";
@@ -15,4 +15,4 @@
 @use "../scss/sections/featured-products";
 @use "../scss/sections/subscribe-newslatter";
 @use "../scss/sections/blog-news";
-@use "./sections/footer";
+@use "../scss/sections/footer-section";
