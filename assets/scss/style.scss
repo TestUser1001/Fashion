@@ -1,5 +1,6 @@
+@use "custom";
 /* IMPORT THE COMPONENTS */
-@use "../scss/components/base";
+@use "components/base";
 @use "../scss/components/typography";
 @use "../scss/components/animations";
 @use "../scss/components/buttons";
