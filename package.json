@@ -1,0 +1,27 @@
+{
+  "name": "fashion",
+  "version": "1.0.0",
+  "description": "\"Code site from psd template\"",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TestUser1001/Fashion.git"
+  },
+  "author": "Inna P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TestUser1001/Fashion/issues"
+  },
+  "homepage": "https://github.com/TestUser1001/Fashion#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.3",
+    "postcss-cli": "^11.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
+}
