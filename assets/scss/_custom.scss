@@ -1,4 +1,88 @@
-$primary: #ff0000;
+/* $primary: #000000;
+$secondary: $white; */
 
 /* IMPORT BOOTSTRAP 5 */
+
+//COLORS
+/* footer: */
+
+$background-accent: #f8f8f8;
+/* $font-color: #000; */
+/* $copyright-font-color: #727272; */
+$footer-main-color: #727272;
+$footer-heading-color: #575153;
+
+/* blog and news: */
+/* $background-heading: #fff; */
+
+$main-heading-font-color: #2d2b27;
+/* $secoind-heading-color: #2d2b27; */
+$blog-date: #7d7d7d;
+
+/* Nesletter subscribe */
+
+/* $heading: #2d2b27; */
+$dark-accent-color: #1a1a1a;
+/* $button-font: #fff; */
+$button-fonts-accent-color: #171717;
+$newsletter-background-color: #d7dbd5;
+
+/* featured-products: */
+
+$button-border-color: #d9c8aa;
+/* $main-header: #2d2b27; */
+/* $categories: #2d2b27; */
+/* $name: #1a1a1a; */
+$brand: #898989;
+/* $button-text: #1a1a1a; */
+
+/* product-types */
+
+$prev-button-color: #afafaf;
+$prev-next-text-color: #353535;
+$next-button-color: #d7d7d7;
+/* $buttons-text-color: #fff; */
+/* $buttons-color: #171717; */
+/* $main-heading: #2d2b27; */
+/* $subheading: #1a1a1a; */
+
+/* All offers:  */
+
+/* $categories: #2d2b27; */
+/* $headings-main: #2d2b27; */
+$subheading-accent: #292929;
+/* $subheading-2: #1a1a1a; */
+/* $name: #292929; */
+/* $button-text: #fff; */
+/* $button-color: #171717; */
+/* $new: #f8f8f8; */
+$white-btn-txt-color: #222121;
+/* $white-btn-color: #fff; */
+
+/* slider */
+
+/* $heading: #171717; */
+/* $prev: #fff; */
+/* $next: #171717; */
+/* $subheading: #171717; */
+$paragraph: #535353;
+/* $btn-color: #171717; */
+/* $btn-txt-color: #fff; */
+
+/* special-offer */
+
+/* $heading: #fff;
+$subheading: #fff;
+$rices: #fff; */
+$button-txt-color: #121212;
+/* $button-color: #f3ebdc; */
+/* $timer-txt-color: #2d2b27; */
+/* $hms: #2d2b27; */
+$timer-btn-color: #f3ebdc;
+
+/* header */
+
+/* $logo: #000; */
+/* $nav: #171717; */
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

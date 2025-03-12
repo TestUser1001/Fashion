@@ -1,0 +1,69 @@
+@use "../custom" as *;
+
+.footer {
+  padding-bottom: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 2.625rem;
+  }
+
+  &__copyright {
+    padding-top: 2.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+.footer-top {
+  padding-top: 3rem;
+  background-color: $background-accent;
+  padding-bottom: 2.75rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 6.44rem;
+  }
+
+  &__heading {
+    font-size: 0.75rem;
+    color: $footer-heading-color;
+
+    @include media-breakpoint-up(md) {
+      font-size: 0.94rem;
+    }
+  }
+
+  &__list {
+    padding-top: 1rem;
+    color: $footer-main-color;
+    font-size: 0.75rem;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 2.625rem;
+      font-size: 0.875rem;
+    }
+
+    li {
+      /* line-height: 1; */
+      margin-bottom: 1.25rem;
+      a {
+        text-decoration: none;
+        color: $footer-main-color;
+        font-size: 0.75rem;
+        text-transform: capitalize;
+        @include transition;
+
+        @include media-breakpoint-up(md) {
+          font-size: 0.875rem;
+        }
+
+        &:hover {
+          color: $black;
+          font-weight: 500;
+        }
+      }
+      span {
+        text-transform: capitalize;
+        color: $black;
+      }
+    }
+  }
+}
