@@ -11945,6 +11945,25 @@ body {
 }
 
 /* IMPORT THE SECTIONS */
+.carousel {
+  padding-top: 3.875rem;
+}
+
+.card {
+  margin: 0 1.875rem;
+  border-radius: 0;
+  border: none;
+  width: 50%;
+}
+
+/* .img-wrapper {
+  height: 23.8125rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+} */
 .footer {
   padding-bottom: 2rem;
 }
