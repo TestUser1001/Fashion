@@ -1,0 +1,14 @@
+@use "../custom" as *;
+@use "mixins" as *;
+
+.prev-icon {
+  @include bg-img("../../assets/img/Blogs-and-News/", "Icon-1.png");
+  width: 3rem;
+  height: 3rem;
+}
+
+.next-icon {
+  @include bg-img("../../assets/img/Blogs-and-News/", "Icon-2.png");
+  width: 3rem;
+  height: 3rem;
+}

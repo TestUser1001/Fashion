@@ -22,6 +22,8 @@
   <body>
     <!--  START THE HEADER -->
 
+    <!-- SUBSCRIBE NEWSLETTER SECTION -->
+
     <!-- THE BLOG ANG NEWS SECTION -->
 
     <section id="blog" class="blog-news">
@@ -37,21 +39,17 @@
 
           <div class="row">
             <!--    CAROUSEL FOR LARGER DEVICES -->
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselExample" class="carousel slide d-none d-lg-block">
               <div class="carousel-inner">
+                <!-- FIRST CAROUSEL ITEM -->
                 <div class="carousel-item active">
-                  <!--   <div class="cards-wrapper">
-
-                </div> -->
                   <div class="cards-wrapper d-flex">
                     <div class="card">
-                      <!--    <div class="img-wrapper"> -->
                       <img
                         src="assets/img/Blogs-and-News/Blog-1.jpg"
                         class="img-fluid"
                         alt="Blog-1 image"
                       />
-                      <!-- </div> -->
                       <div
                         class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
                       >
@@ -61,17 +59,13 @@
                         <p class="card-text">January 12, 2020 by admin</p>
                       </div>
                     </div>
-                    <!-- </div> -->
 
-                    <!-- <div class="card-wrapper"> -->
                     <div class="card">
-                      <!--   <div class="img-wrapper"> -->
                       <img
                         src="assets/img/Blogs-and-News/Blog-2.jpg"
                         class="img-fluid"
                         alt="Blog-2 image"
                       />
-                      <!-- </div> -->
                       <div
                         class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
                       >
@@ -84,16 +78,15 @@
                   </div>
                 </div>
 
+                <!-- SECOND CAROUSEL ITEM -->
                 <div class="carousel-item">
                   <div class="cards-wrapper d-flex">
                     <div class="card">
-                      <!--  <div class="img-wrapper"> -->
                       <img
                         src="assets/img/Blogs-and-News/Blog-1.jpg"
                         class="img-fluid"
                         alt="Blog-3 image"
                       />
-                      <!--   </div> -->
                       <div
                         class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
                       >
@@ -105,13 +98,11 @@
                     </div>
 
                     <div class="card">
-                      <!-- <div class="img-wrapper"> -->
                       <img
                         src="assets/img/Blogs-and-News/Blog-2.jpg"
                         class="img-fluid"
                         alt="Blog-1 image"
                       />
-                      <!--  </div> -->
                       <div
                         class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
                       >
@@ -130,10 +121,7 @@
                 data-bs-target="#carouselExample"
                 data-bs-slide="prev"
               >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
+                <span class="prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button
@@ -142,10 +130,107 @@
                 data-bs-target="#carouselExample"
                 data-bs-slide="next"
               >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
+                <span class="next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!--  CAROSEL FOR SMALL DEVICES -->
+            <div
+              id="carousel-mobile"
+              class="carousel slide d-block d-sm-block d-lg-none"
+            >
+              <div class="carousel-inner">
+                <!-- FIRST CAROUSEL ITEM -->
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img
+                      src="assets/img/Blogs-and-News/Blog-1.jpg"
+                      class="img-fluid"
+                      alt="Blog-3 image"
+                    />
+                    <div
+                      class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="card-title">
+                        The 15 Secrets About Fashion People
+                      </h5>
+                      <p class="card-text">January 12, 2020 by admin</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- SECOND CAROUSEL ITEM -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      src="assets/img/Blogs-and-News/Blog-2.jpg"
+                      class="img-fluid"
+                      alt="Blog-2 image"
+                    />
+
+                    <div
+                      class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="card-title">
+                        The 15 Secrets About Fashion People
+                      </h5>
+                      <p class="card-text">January 12, 2020 by admin</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- THIRD CAROUSEL ITEM -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      src="assets/img/Blogs-and-News/Blog-1.jpg"
+                      class="img-fluid"
+                      alt="Blog-2 image"
+                    />
+                    <div
+                      class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="card-title">
+                        The 15 Secrets About Fashion People
+                      </h5>
+                      <p class="card-text">January 12, 2020 by admin</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- FOURTH CAROUSEL ITEM -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      src="assets/img/Blogs-and-News/Blog-2.jpg"
+                      class="img-fluid"
+                      alt="Blog-2 image"
+                    />
+                    <div
+                      class="card-body lh-1 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="card-title">
+                        The 15 Secrets About Fashion People
+                      </h5>
+                      <p class="card-text">January 12, 2020 by admin</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-mobile "
+                data-bs-slide="prev"
+              >
+                <span class="prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-mobile "
+                data-bs-slide="next"
+              >
+                <span class="next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
@@ -161,7 +246,7 @@
 
       <div class="footer-top">
         <div class="container">
-          <div class="row">
+          <div class="row text-center text-sm-start">
             <!-- THE INFORMATION CONTENT -->
             <div class="col-lg-2 col-md-4 col-sm-6">
               <h4 class="footer-top__heading fw-bold text-uppercase mb-0">
@@ -235,7 +320,7 @@
                 <li>
                   <span class="fw-bold">Email: </span>free@psdfreebies.com
                 </li>
-                <li>
+                <li class="">
                   <span class="fw-bold">Head office: </span>245 Yellow House,
                   Main Street, London. 456789
                 </li>

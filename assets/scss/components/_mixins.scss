@@ -3,3 +3,11 @@
 @mixin transition {
   transition: all 0.3s ease-in-out;
 }
+
+@mixin bg-img($img-folder, $img, $pos: center center, $att: scroll) {
+  background-image: url("#{$img-folder}#{$img}");
+  background-position: $pos;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: $att;
+}

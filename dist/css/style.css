@@ -11944,6 +11944,26 @@ body {
   color: #2d2b27;
 }
 
+.prev-icon {
+  background-image: url("../../assets/img/Blogs-and-News/Icon-1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 3rem;
+  height: 3rem;
+}
+
+.next-icon {
+  background-image: url("../../assets/img/Blogs-and-News/Icon-2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 3rem;
+  height: 3rem;
+}
+
 /* IMPORT THE SECTIONS */
 .blog-news {
   position: relative;
@@ -11951,6 +11971,7 @@ body {
 }
 
 .carousel {
+  position: relative;
   padding-top: 3.875rem;
 }
 
@@ -11963,12 +11984,32 @@ body {
   overflow: visible;
 }
 
+/* .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+}
+
+.carousel-control-prev {
+  left: -8%;
+  transform: translateX(-8%);
+}
+
+.carousel-control-next {
+  right: -8%;
+  transform: translateX(-8%);
+} */
 .card {
   position: relative;
-  margin: 0 1.875rem;
+  margin: 0;
   border-radius: 0;
   border: none;
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .card {
+    width: 50%;
+    margin: 0 1.875rem;
+  }
 }
 
 .card-body {
@@ -11992,17 +12033,34 @@ body {
   }
 } */
 .card-title {
-  font-size: 1.11rem;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  /* text-transform: uppercase; */
   color: #2d2b27;
   font-weight: 600;
 }
+@media (min-width: 576px) {
+  .card-title {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 1.11rem;
+  }
+}
 
 .card-text {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #7d7d7d;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
+}
+@media (min-width: 768px) {
+  .card-text {
+    font-size: 0.875rem;
+  }
 }
 
 .background {
@@ -12018,6 +12076,14 @@ body {
   height: 27%;
   /* opacity: 20%; */
   z-index: -1;
+}
+
+.transform-prev-button {
+  transform: translateX(-8.875rem);
+}
+
+.transform-next-button {
+  transform: translateX(8.875rem);
 }
 
 .footer {
