@@ -12,3 +12,16 @@
   width: 3rem;
   height: 3rem;
 }
+
+.btn-edit {
+  font-size: 0.75rem;
+  /*  @include linktransition; */
+  @include media-breakpoint-up(md) {
+    font-size: 0.89rem;
+  }
+
+  &:hover {
+    background-color: rgba($primary, 0.85);
+    border: none;
+  }
+}

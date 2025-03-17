@@ -1,0 +1,42 @@
+@use "../custom" as *;
+
+.subscribe-newsletter {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /*  background-color: $newsletter-background-color; */
+
+  @include media-breakpoint-up(md) {
+    margin-top: 5.625rem;
+    margin-bottom: 6.5rem;
+  }
+}
+
+.subscribe-background {
+  background-color: $newsletter-background-color;
+}
+
+.image-wrapper-subscribe {
+  height: 15.625rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+} */
+
+.cta {
+  color: $dark-accent-color;
+  font-size: 0.875rem;
+  letter-spacing: 1;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.01rem;
+    letter-spacing: 0.3;
+  }
+}

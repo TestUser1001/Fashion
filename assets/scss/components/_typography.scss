@@ -19,6 +19,10 @@
 
 /* SECTION HEADINGS STYLE */
 .section-heading {
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   color: $main-heading-font-color;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.625rem;
+  }
 }
