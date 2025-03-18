@@ -15,7 +15,7 @@
 
 .btn-edit {
   font-size: 0.75rem;
-  /*  @include linktransition; */
+  @include my-custom-transition;
   @include media-breakpoint-up(md) {
     font-size: 0.89rem;
   }
@@ -23,5 +23,20 @@
   &:hover {
     background-color: rgba($primary, 0.85);
     border: none;
+  }
+}
+
+.custom-btn {
+  padding: 1.4375rem 2.8125rem;
+  text-transform: uppercase;
+  border: 0.125rem solid $button-border-color;
+  font-size: 0.75rem;
+  color: $dark-accent-color;
+  @include my-custom-transition;
+
+  &:hover {
+    background-color: rgba($button-border-color, 0.3);
+    border-color: darken($button-border-color, 20);
+    color: darken($button-border-color, 50);
   }
 }

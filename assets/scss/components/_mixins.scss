@@ -1,6 +1,6 @@
 @use "../custom" as *;
 
-@mixin transition {
+@mixin my-custom-transition {
   transition: all 0.3s ease-in-out;
 }
 

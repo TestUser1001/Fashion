@@ -1,5 +1,5 @@
 @use "../custom" as *;
-
+@use "../components/mixins" as *;
 .footer {
   padding-bottom: 2rem;
 
@@ -42,14 +42,13 @@
     }
 
     li {
-      /* line-height: 1; */
       margin-bottom: 1.25rem;
       a {
         text-decoration: none;
         color: $footer-main-color;
         font-size: 0.75rem;
         text-transform: capitalize;
-        @include transition;
+        @include my-custom-transition;
 
         @include media-breakpoint-up(md) {
           font-size: 0.875rem;
