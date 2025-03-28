@@ -1,14 +1,22 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 .featured-products {
-  button {
-    margin-top: 2.875rem;
+  margin-top: 3.125rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 6.3125rem;
   }
 }
 
 .categories {
-  margin-top: 3.75rem;
-  margin-bottom: 3.875rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.875rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 3.375rem;
+    margin-bottom: 3.875rem;
+  }
+
   li {
     display: inline-block;
     padding-right: 3.125rem;
@@ -16,12 +24,33 @@
       text-decoration: none;
       font-size: 1.1837rem;
       @include my-custom-transition;
+      color: $main-heading-font-color;
+      font-weight: 600;
       &:hover {
         color: rgba($main-heading-font-color, 0.5);
       }
     }
   }
 }
+
+.navbar {
+  position: relative;
+  @include my-custom-transition;
+}
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* .navbar-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+  }
+} */
 
 .card-product {
   display: flex;
@@ -72,6 +101,6 @@
   height: 390px;
   img {
     width: 100%;
-    height: AUTO;
+    height: auto;
   }
 }

@@ -1,0 +1,52 @@
+@use "../custom" as *;
+@use "../components/mixins";
+
+.product-types {
+  margin-top: 3.125rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 6.625rem;
+  }
+}
+
+.discount {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+  color: $dark-accent-color;
+  margin-bottom: 1.5rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 1.8125rem;
+    margin-bottom: 3.0625rem;
+    font-size: 0.875rem;
+  }
+}
+
+.product-types-card-wrapper {
+  display: flex;
+  gap: 2.25rem;
+}
+
+.card-product-types {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    width: calc(100% / 3);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.card-product-types__body {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 78%;
+  /*transform: translateY(-80%); */
+}

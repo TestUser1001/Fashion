@@ -22,19 +22,626 @@
   <body>
     <!--  START THE HEADER -->
 
+    <header>
+      <nav></nav>
+    </header>
+
+    <!--  HERO SLIDER SECTION -->
+
+    <section class="hero" id="hero">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="carouselExampleHero" class="carousel slide p-0">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/img/Slider/Slider-1.jpg"
+                  alt="hero"
+                  class="img-fluid"
+                />
+                <!--  <div class="hero-wrapper"> -->
+                <div class="hero__description description col-6">
+                  <h1 class="main-heading lh-1 text-uppercase fw-semibold">
+                    Summer Collection
+                  </h1>
+                  <div class="description__wrapper p-1">
+                    <p class="description__page-counter">
+                      <span>01</span> MEN'S WEAR
+                    </p>
+                    <!--  <div class="description__icons"> -->
+                    <ul class="list-unstyled description__icons">
+                      <li>
+                        <a href="#">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                            width="10px"
+                            hight="10px"
+                          >
+                            <path
+                              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            width="10px"
+                            hight="10px"
+                          >
+                            <path
+                              d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            width="10px"
+                            hight="10px"
+                          >
+                            <path
+                              d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <!-- </div> -->
+                    <p class="description__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus sed fermentum nibh, vel aliquet massa. Etiam in
+                      magna id risus lacinia luctus eget eu est.
+                    </p>
+                    <button type="button" class="btn btn-primary rounded-pill">
+                      SHOP NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- </div> -->
+
+                <div class="hero__timer"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleHero"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleHero"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL OFFERS SECTION -->
+
+    <section id="all-offers" class="all-offers">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg mb-2 mb-lg-0">
+            <!--   <div class="container-fluid"> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <!--  <a class="navbar-brand" href="#">Hidden brand</a> -->
+              <ul class="navbar-nav categories">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">spring-summer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">sweatshirt</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">sneackers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">gadgets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">outdoor</a>
+                </li>
+              </ul>
+            </div>
+            <!--   </div> -->
+          </nav>
+        </div>
+
+        <div class="row">
+          <!--  MOSAIC GALLERY -->
+          <div class="mosaic-grid mx-auto">
+            <div class="item-grid item-1">
+              <img
+                src="assets/img/AllOffers/Offer-1.jpg"
+                alt="Offer-1 image"
+                class="img-fluid"
+              />
+              <h3
+                class="item-grid__heading item-grid__heading--second text-center text-uppercase"
+              >
+                BUY 2 GET <br />UP 50% OFF
+              </h3>
+            </div>
+            <div class="item-grid item-2">
+              <img
+                src="assets/img/AllOffers/Offer-3.jpg"
+                alt="Offer-3 image"
+                class="img-fluid"
+              />
+              <div class="item-grid__offer-info item-grid__offer-info--women">
+                <span class="item-grid__offer-name">Winter Jacket</span>
+                <h3
+                  class="item-grid__heading item-grid__heading--main item-grid__heading--women"
+                >
+                  VINTAGE LOOK <br />FOR WOMEN
+                </h3>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill text-uppercase btn-edit--offers-main"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+
+              <div class="item-grid__new">
+                <div class="item-grid__div-wrapper">
+                  <img
+                    src="assets/img/AllOffers/New-1.png"
+                    alt="New pic"
+                    class="d-block"
+                  />
+                  <span class="text-uppercase item-grid__text">new</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-grid item-3">
+              <img
+                src="assets/img/AllOffers/Offer-2.jpg"
+                alt="Offer-2 image"
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="item-grid item-4">
+              <img
+                src="assets/img/AllOffers/Offer-4.jpg"
+                alt="Offer-4 image"
+                class="img-fluid"
+              />
+              <div class="item-grid__offer-info item-grid__offer-info--men">
+                <span class="item-grid__offer-name">Winter Jacket</span>
+                <h3
+                  class="item-grid__heading item-grid__heading--main item-grid__heading--men"
+                >
+                  FASHION <br />FOR MEN
+                </h3>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill text-uppercase btn-edit--offers-main"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+            </div>
+
+            <div class="item-grid item-5">
+              <img
+                src="assets/img/AllOffers/Offer-5.jpg"
+                alt="Offer-5 image"
+                class="img-fluid"
+              />
+
+              <h3 class="item-grid__heading--subheading text-uppercase">
+                40% off on sunglasses
+              </h3>
+
+              <div class="item-grid__new">
+                <div class="item-grid__div-wrapper">
+                  <img
+                    src="assets/img/AllOffers/New-1.png"
+                    alt="New pic"
+                    class="d-block"
+                  />
+                  <span class="text-uppercase item-grid__text">new</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-grid item-6 d-md-flex">
+              <div class="col-md-5">
+                <img
+                  src="assets/img/AllOffers/Offer-5.png"
+                  alt="Offer-6 image"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-7 d-flex align-items-center">
+                <div
+                  class="d-flex flex-column align-items-center p-3 text-center"
+                >
+                  <h2
+                    class="section-heading section-heading--offers text-uppercase fw-bold"
+                  >
+                    WE OFFER BRAND NEW STYLES
+                  </h2>
+                  <p class="offers-description text-uppercase">
+                    SIGN UP NOW AND GET 50% OFF
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-secondary rounded-pill lh-1 text-uppercase btn-edit--offers"
+                    >SEE FULL COLLECTION</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--  <div class="item-grid"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT TYPES SECTION -->
+    <section id="product-types" class="product-types">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-heading fw-semibold lh-1 text-uppercase mb-0">
+            Product Types
+          </h2>
+          <p class="discount lh-1">up to 30% discount</p>
+        </div>
+
+        <!--  CAROUSEL FOR LARGE AND MEDIUM DEVICES -->
+        <div class="row">
+          <div
+            id="carouselProductTypes"
+            class="carousel slide pt-0 ps-0 pe-0 d-none d-md-block"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="product-types-card-wrapper">
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-1.jpg"
+                      alt="Product type -1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop men
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-2.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop women
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-3.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop kids
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="product-types-card-wrapper">
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-1.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop men
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-2.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop women
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-3.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop kids
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselProductTypes"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselProductTypes"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!--  CAROUSEL FOR SMALL DEVICES -->
+          <div
+            id="carouselProductTypesMobile"
+            class="carousel slide pt-0 ps-0 pe-0 d-block d-md-none"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <!--    <div class="product-types-card-wrapper"> -->
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-1.jpg"
+                      alt="Product type -1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop men
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-2.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop women
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card-product-types">
+                    <a href="#">
+                      <img
+                        src="assets/img/ProductTypes/Product-Type-3.jpg"
+                        alt="Product-1 image"
+                        class="img-fluid"
+                      />
+                    </a>
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop kids
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  </div> -->
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <!--      <div class="product-types-card-wrapper"> -->
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-1.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop men
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-2.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop women
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card-product-types">
+                    <img
+                      src="assets/img/ProductTypes/Product-Type-3.jpg"
+                      alt="Product-1 image"
+                      class="img-fluid"
+                    />
+                    <div class="card-product-types__body">
+                      <button
+                        type="button"
+                        class="btn btn-primary rounded-pill text-uppercase btn-edit--product-types"
+                      >
+                        Shop kids
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  </div> -->
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselProductTypesMobile"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselProductTypesMobile"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FEATURED PRODUCTS SECTION -->
 
     <section id="featured-products" class="featured-products">
       <div class="container">
         <div class="row">
           <h2
-            class="section-heading text-center text-uppercase fw-semibold lh-base mb-0"
+            class="section-heading text-center text-uppercase fw-semibold lh-1 mb-3 mb-lg-0"
           >
             Featured products
           </h2>
         </div>
-        <div class="row">
-          <div class="col-12 text-center">
+        <div class="row text-center">
+          <!--   <div class="col-12 text-center">
             <ul class="categories list-unstyled fw-semibold">
               <li><a href="#">All</a></li>
               <li><a href="#">spring-summer</a></li>
@@ -43,7 +650,49 @@
               <li><a href="#">gadgets</a></li>
               <li><a href="#">outdoor</a></li>
             </ul>
-          </div>
+          </div> -->
+
+          <nav class="navbar navbar-expand-lg mb-2 mb-lg-0">
+            <!--   <div class="container-fluid"> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <!--  <a class="navbar-brand" href="#">Hidden brand</a> -->
+              <ul class="navbar-nav categories">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">spring-summer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">sweatshirt</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">sneackers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">gadgets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">outdoor</a>
+                </li>
+              </ul>
+            </div>
+            <!--   </div> -->
+          </nav>
         </div>
 
         <!--    THE CAROUSEL FOR LARGER DEVICES -->
@@ -246,7 +895,7 @@
                       alt="Product-1 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -264,7 +913,7 @@
                       alt="Product-2 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -286,7 +935,7 @@
                       alt="Product-3 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -304,7 +953,7 @@
                       alt="Product-4 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -326,7 +975,7 @@
                       alt="Product-1 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -344,7 +993,7 @@
                       alt="Product-2 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -366,7 +1015,7 @@
                       alt="Product-3 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -384,7 +1033,7 @@
                       alt="Product-4 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitalize">
                         Ted Baker Womens Light
                       </h5>
@@ -438,7 +1087,7 @@
                       class="img-fluid"
                     />
 
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -460,7 +1109,7 @@
                       alt="Featured-Product-2 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -482,7 +1131,7 @@
                       alt="Featured-Product-3 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -504,7 +1153,7 @@
                       alt="Product-4 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -526,7 +1175,7 @@
                       alt="Product-1 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -548,7 +1197,7 @@
                       alt="Product-2 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -570,7 +1219,7 @@
                       alt="Product-3 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -592,7 +1241,7 @@
                       alt="Product-4 image"
                       class="img-fluid"
                     />
-                    <div class="card-product__body">
+                    <div class="card-product__body text-center">
                       <h5 class="card-product__title fw-bold text-capitilize">
                         Ted Baker Womens Light
                       </h5>
@@ -637,7 +1286,7 @@
           <div class="col-12">
             <button
               type="button"
-              class="btn btn-outline-secondary rounded-pill custom-btn"
+              class="btn btn-outline-dark rounded-pill custom-btn"
             >
               Show more
             </button>
