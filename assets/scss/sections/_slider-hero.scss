@@ -6,42 +6,79 @@
 
   &__description {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    /* transform: translateX(-50%); */
-    /*  z-index: 1; */
+    top: 10%;
+    left: 43%;
+
+    @include media-breakpoint-up(lg) {
+      top: 20%;
+      left: 50%;
+    }
   }
 
   &__timer {
     position: absolute;
     right: 0;
-    /*  transform: translateX(-5%); */
+
     bottom: 0;
     @include bg-img("../../assets/img/Slider/", "bg.png");
-    width: 33.65%;
-    height: 48.4%;
-    /* float: left; */
+    width: 27%;
+    height: 55%;
+    @include media-breakpoint-up(lg) {
+      width: 27%;
+      height: 48.4%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 33.65%;
+      height: 48.4%;
+    }
   }
 }
 
 .description {
   &__wrapper {
-    width: 33.91%;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 58%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 33.91%;
+    }
   }
 
   &__page-counter {
     color: $button-fonts-accent-color;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
+    margin-bottom: 0.7rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 0.875rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 1rem;
+    }
+
     span {
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-weight: 600;
-      margin-right: 2rem;
+      margin-right: 1rem;
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 2rem;
+        font-size: 1.125rem;
+      }
     }
   }
   &__icons {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     line-height: 1;
 
     @include media-breakpoint-up(xxl) {
@@ -53,17 +90,21 @@
       border: 0.0625rem solid $button-fonts-accent-color;
       border-radius: 50%;
       overflow: hidden;
-      width: 35px;
-      height: 35px;
-      margin-right: 1.1875rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 1rem;
+
+      @include media-breakpoint-up(xl) {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        margin-right: 1.1875rem;
+      }
     }
 
     a {
       display: flex;
-      /*     border-radius: 50%; */
       width: 100%;
       height: 100%;
-      /* align-items: center; */
       justify-content: center;
       @include my-custom-transition;
 
@@ -105,18 +146,16 @@
   width: 100%;
 }
 
-/* .timer {
-  &__img {
-    width: 36.38%;
-  }
-}*/
-
 .hero__timer .timer {
   /* position: relative; */
 
   &__img {
-    width: 36.38%;
-    height: 100%;
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      width: 36.38%;
+      height: 100%;
+    }
   }
 }
 
@@ -124,6 +163,13 @@
   display: flex;
   &__special-offer {
     padding: 1.5rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include media-breakpoint-up(xl) {
+      padding: 2rem 1rem;
+    }
 
     @include media-breakpoint-up(xxl) {
       padding: 2.5rem 2rem 4rem 2rem;
@@ -148,10 +194,18 @@
 
   &__price {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     color: $white;
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.4rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
     @media screen AND (min-width: 1700px) {
       margin-top: 2rem;
       margin-bottom: 3rem;
@@ -163,14 +217,22 @@
   }
 
   &__price-overline {
-    font-size: 1.36624rem;
+    font-size: 1rem;
     text-decoration: line-through;
     margin-right: 1rem;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 1.36624rem;
+    }
   }
 
   &__price-actual {
     font-size: 1.5rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
 
     @include media-breakpoint-up(xl) {
       font-size: 2rem;
@@ -188,21 +250,27 @@
 
 .countdown {
   gap: 1.25rem;
-  justify-content: space-between;
+
+  justify-content: space-around;
+
   &__hours-min-sec {
-    background-color: $white;
     font-weight: 600;
-  }
 
-  &__hours-min-sec {
-    color: $main-heading-font-color;
-
-    border-radius: 1.25rem;
     align-items: center;
     justify-content: center;
 
-    width: 4rem;
-    height: 5rem;
+    color: $white;
+    width: 0;
+    height: 0;
+
+    @include media-breakpoint-up(lg) {
+      /* width: 4.5rem; */
+      background-color: $white;
+      border-radius: 1.25rem;
+      width: 3.8rem;
+      height: 4.2rem;
+      color: $main-heading-font-color;
+    }
 
     @include media-breakpoint-up(xxl) {
       width: 4.5rem;
@@ -216,7 +284,12 @@
   }
 
   &__qty {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: rgba($red, 0.8);
+
+    @include media-breakpoint-up(lg) {
+      color: $main-heading-font-color;
+    }
 
     @include media-breakpoint-up(xxl) {
       font-size: 1.8rem;
@@ -241,14 +314,26 @@
 
 .arrows {
   position: absolute;
-  top: 19.5%;
+  top: 9%;
   right: 16%;
+
+  @include media-breakpoint-up(lg) {
+    top: 19.5%;
+  }
 }
 
 .nav-arrows {
   display: flex;
   flex-direction: column;
-  gap: 1.5625rem;
+  gap: 0.1rem;
+
+  @include media-breakpoint-up(lg) {
+    gap: 0.8rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    gap: 1.5625rem;
+  }
 
   &__next-prev {
     display: flex;
@@ -257,9 +342,13 @@
 
   &__text {
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 600;
     color: $white;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 0.75rem;
+    }
   }
 
   &__arrow-prev {
