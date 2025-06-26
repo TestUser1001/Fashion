@@ -1,0 +1,51 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.header {
+  &__nav {
+    padding-left: 5.72%;
+
+    ul {
+      @include media-breakpoint-up(md) {
+        align-items: center;
+      }
+      align-items: start;
+
+      justify-content: space-evenly;
+
+      li {
+        /*  margin-right: 5.3125%; */
+
+        a {
+          font-size: 0.75rem;
+          font-weight: 300;
+          color: $button-fonts-accent-color;
+
+          @include my-custom-transition;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $black;
+            font-weight: 700;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__icons {
+    padding-right: 14.8125%;
+
+    span {
+      margin-left: 11%;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 1.25%;
+    }
+  }
+}

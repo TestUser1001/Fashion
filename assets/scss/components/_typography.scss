@@ -9,11 +9,19 @@
   &__name {
     font-weight: 800;
 
-    font-size: 1.77rem;
+    font-size: 1.25rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.77rem;
+    }
   }
 
   &__tagName {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -41,7 +49,14 @@
   &--accent {
     color: $white;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.65rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 0.875rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+    }
 
     @include media-breakpoint-up(lg) {
       font-size: 1.2rem;
@@ -58,7 +73,10 @@
 }
 
 .main-heading {
-  font-size: 2.6rem;
+  font-size: 1rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+  }
 
   @include media-breakpoint-up(md) {
     font-size: 2.7rem;
@@ -73,7 +91,7 @@
   }
 
   @include media-breakpoint-up(xxl) {
-    font-size: 5.6rem;
+    font-size: 5.4rem;
   }
 
   @media screen AND (min-width: 1700px) {
