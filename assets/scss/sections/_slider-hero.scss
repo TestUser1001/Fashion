@@ -22,7 +22,6 @@
 
   &__description {
     position: absolute;
-    /* background-color: rgba($white, 0.4); */
     top: 5%;
     left: 0%;
 
@@ -90,7 +89,6 @@
     color: $button-fonts-accent-color;
     font-size: 0.7rem;
     text-transform: capitalize;
-    /* letter-spacing: 0.05rem; */
     margin-bottom: 0.4rem;
     line-height: 1;
 
@@ -240,8 +238,6 @@
 }
 
 .hero__timer .timer {
-  /* position: relative; */
-
   &__img {
     display: none;
     @include media-breakpoint-up(xl) {
@@ -302,11 +298,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin: 0 auto;
-    /* justify-content: space-between; */
 
-    /* @include media-breakpoint-up(sm) {
-      
-    } */
     @include media-breakpoint-up(md) {
       flex-wrap: nowrap;
       gap: 0;
@@ -323,12 +315,10 @@
     margin-top: 0.8rem;
     margin-bottom: 0.2rem;
     @include media-breakpoint-up(sm) {
-      /*   margin-top: 1rem; */
       flex-wrap: wrap;
     }
 
     @include media-breakpoint-up(md) {
-      /*   margin-top: 1rem; */
       margin-bottom: 0.5rem;
     }
 
@@ -399,11 +389,8 @@
     justify-content: center;
 
     color: $white;
-    /* width: 0;
-    height: 0; */
 
     @include media-breakpoint-up(lg) {
-      /* width: 4.5rem; */
       background-color: $white;
       border-radius: 1.25rem;
       width: 3.8rem;
@@ -474,10 +461,6 @@
     gap: 0.8rem;
   }
 
-  /* @include media-breakpoint-up(xl) {
-    gap: 1.5625rem;
-  } */
-
   &__next-prev {
     display: flex;
     flex-direction: column;
@@ -534,9 +517,6 @@
     align-items: center;
     padding: 0.3rem 0;
     border-top: 0.05rem solid $black;
-    /* box-shadow: 0 0.6rem rgba($black, 0.5); */
-    /*  justify-content: center;
-  align-items: center; */
   }
   background-color: $social-media-bg;
   display: flex;
@@ -558,7 +538,6 @@
     @include media-breakpoint-down(sm) {
       transform: none;
     }
-    /* padding-right: 2.5rem; */
   }
 
   &__icons {
